@@ -6,6 +6,19 @@ set -Eeuo pipefail
 # Target: Ubuntu (tested with Ubuntu 26.04 LTS GUI by repository owner)
 # Purpose: Turn old on-prem hardware into private company storage with remote access
 # ============================================================
+# What this script does
+# This installer will automatically:
+# ============================================================
+# update the system and install required packages, including Nginx, MariaDB, Redis, and the required PHP modules for Nextcloud
+# download the latest Nextcloud release archive and validate it with the published SHA256 checksum before deployment
+# create the Nextcloud database and a dedicated database user
+# deploy Nextcloud under /var/www/nextcloud by default
+# place the data directory outside the web root by default (/srv/nextcloud-data), which is a good operational pattern for production-style deployments
+#configure Nginx and PHP-FPM automatically
+# run the unattended occ maintenance:install setup
+# enable Redis-based file locking and cron background jobs, both of which are part of Nextcloud’s production tuning guidance
+# save generated credentials to /root/nextcloud-credentials.txt
+# ============================================================
 
 # ----------------------------
 # User-configurable variables
