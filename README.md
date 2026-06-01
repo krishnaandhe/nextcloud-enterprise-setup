@@ -1,6 +1,6 @@
 # Nextcloud Server (Community Edition) ☁
 
-**A safe home for all your data.**
+**Turn old on-prem servers or unused desktops into secure private company storage with remote access, using Nextcloud Community Edition — with practical deployment steps, business guidance, and lightweight operational documentation.**
 
 ![](https://raw.githubusercontent.com/nextcloud/screenshots/master/nextcloud-hub-25-files.png)
 
