@@ -127,7 +127,9 @@ Open browser and navigate to:
 http://<your-server-ip>
 ```
 Setup Details
+
 |Field|Value|
+|----------|--------|
 |Admin Username|admin|
 |Admin Password|StrongPassword|
 |Data Folder|/var/www/nextcloud/data|
@@ -184,6 +186,7 @@ You now have:
 ---
 ⚠️ Post-Installation (Recommended)
 |Task|Status|
+|----------|--------|
 |Enable HTTPS (SSL)|✅ Recommended|
 |Configure backup|✅ Required|
 |Setup users/groups|✅ Required|
