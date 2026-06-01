@@ -6,10 +6,6 @@ You can also [get support for Nextcloud](https://nextcloud.com/support)!
 
 ![](https://raw.githubusercontent.com/nextcloud/screenshots/master/nextcloud-hub-25-files.png)
 
-# Nextcloud Community Setup for Old Hardware
-
-Turn old on-prem servers or unused desktops into secure private company storage with remote access, using Nextcloud Community Edition — with practical deployment steps, business guidance, and lightweight operational documentation.
-
 ---
 
 ## 📌 Why this repo exists
