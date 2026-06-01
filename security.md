@@ -122,6 +122,6 @@ sudo apt update && sudo apt upgrade -y
 |System Logs|/var/log/syslog|
 
 Recommendation
-.Regular log review
-.Enable alerting if possible
-.Monitor disk usage and errors
+-Regular log review
+-Enable alerting if possible
+-Monitor disk usage and errors
