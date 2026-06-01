@@ -26,14 +26,28 @@ This guide provides a **step-by-step manual installation** of Nextcloud Communit
 - Storage → Local Disk (`/var/www/nextcloud/data`)  
 
 ---
-
 ## ⚙️ Step 1 – Update System
 
 ```bash
 sudo apt update && sudo apt upgrade -y
-
-📦 Step 2 – Install Required Packages
+```
+---
+## 📦 Step 2 – Install Required Packages
 ```bash
 sudo apt install -y nginx mariadb-server redis-server \
 php-fpm php-mysql php-xml php-curl php-gd php-mbstring \
 php-zip php-intl php-bcmath php-gmp php-imagick unzip wget
+```
+🗄️ Step 3 – Configure Database (MariaDB)
+Login to MariaDB
+```bash
+sudo mysql
+```
+Create Database and User
+```
+CREATE DATABASE nextcloud;
+CREATE USER 'ncuser'@'localhost' IDENTIFIED BY 'StrongPassword123!';
+GRANT ALL PRIVILEGES ON nextcloud.* TO 'ncuser'@'localhost';
+FLUSH PRIVILEGES;
+EXIT;
+```
